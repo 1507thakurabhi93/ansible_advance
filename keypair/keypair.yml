@@ -1,0 +1,4 @@
+---
+- hosts: workstation-b236.rhpds.opentlc.com
+  roles:
+    - keypair

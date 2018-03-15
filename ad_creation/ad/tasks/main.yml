@@ -1,0 +1,10 @@
+---
+# tasks file for ad
+- win_reboot:
+- include: install_ad_domain_services.yml
+- win_reboot: 
+- win_domain:
+    dns_domain_name: ad1.747f.example.opentlc.com
+    safe_mode_password: jVMijRwLbI02gFCo2xkjlZ9lxEA7bm7zgg==
+- win_reboot:
+#- win_command: nltest /dclist: "{{ ad_domain_name }}"
